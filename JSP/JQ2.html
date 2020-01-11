@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Selectors</title>
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("p").click(function(){
+						alert("This paragraph was clicked");
+					});
+				});
+				$(document).ready(function(){
+					$("h1,h2").click(function(){
+						$(this).hide();
+					});
+				});
+				
+			</script>
+	</head>
+	<body>
+		<p>Click</p>
+		<h1>I will vanish!!</h2>
+		<h2>I want to vanish too!!</h2>
+		
+	</body>
+</html>

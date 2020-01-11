@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	<script>
+		function favcol(str){
+		if (str=="b")
+		document.getElementById("col").innerHTML="<h1><font color='blue'>I am your favourite colour!</font></h1>";
+		if (str=="g")
+		document.getElementById("col").innerHTML="<h1><font color='green'>I am your favourite colour!</font></h1>";
+		if (str=="r")
+		document.getElementById("col").innerHTML="<h1><font color='red'>I am your favourite colour!</font></h1>";
+		}
+		</script>
+	</head>
+	<body>
+		<h1>Choose your Favourite colour</h1>
+		<p id="col">I will be your favourite colour</p>
+		<input type="button" value="Blue" onclick="favcol('b')">
+		<input type="button" value="Green" onclick="favcol('g')">
+		<input type="button" value="Red" onclick="favcol('r')">
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	<script>
+		function validate(){
+		if (document.myForm.Name.value==""){
+			alert("Please Enter Your Name!!");
+			document.myForm.Name.focus();
+			return false;
+			}
+		if (document.myForm.EMail.value==""){
+			alert("Please Enter Your EMail Id!!");
+			document.myForm.EMail.focus();
+			return false;
+			}
+			return true;
+		}
+		</script>
+	</head>
+	<body>
+		<h1> Fill the Form</h1>
+		
+		<form action="" name="myForm" onsubmit="return(validate())">
+		Enter Your Name:<input type="text" name="Name" /><br>
+		Enter Your Email Id:<input type="email" name="EMail" /><br>
+		<input type="submit">
+		</form>
+	</body>
+</html>

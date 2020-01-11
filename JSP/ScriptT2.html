@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	<script>
+		
+		function validate(){
+		if (document.myForm.Name.value==""){
+			document.getElementById("text1").innerHTML="<font color='red'>Name can not be empty!</font>";
+			document.getElementById("text2").innerHTML="<font color='white'>EMail can not be empty!</font>";
+			document.myForm.Name.focus();
+			return false;
+			}
+		if (document.myForm.EMail.value==""){
+			document.getElementById("text2").innerHTML="<font color='red'>EMail can not be empty!</font>";
+			document.getElementById("text1").innerHTML="<font color='white'>Name can not be empty!</font>";
+			document.myForm.EMail.focus();
+			return false;
+			}
+			return true;
+		}
+		</script>
+	</script>
+	</head>
+	<body>
+	<h1> Fill the Form</h1>
+		
+		<form action="" name="myForm" onsubmit="return(validate());">
+		Enter Your Name:<input type="text" name="Name" /> <b id="text1"><font color="white">Text1</font></b><br>
+		Enter Your Email Id:<input type="email" name="EMail" /> <b id="text2"><font color="white">Text2</font></b><br>
+		<input type="submit">
+		</form>
+		
+	</body>
+</html>
